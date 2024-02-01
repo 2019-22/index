@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM nginx:latest
 RUN set -ex\
     && apt update -y \
     && apt upgrade -y \
