@@ -1,4 +1,4 @@
-FROM nginx:1.25.3
+FROM ubuntu:latest
 RUN set -ex\
     && apt update -y \
     && apt upgrade -y \
