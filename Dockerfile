@@ -3,8 +3,8 @@ RUN set -ex\
     && apt update -y \
     && apt upgrade -y \
     && apt install unzip -y
-RUN curl -O 'https://raw.githubusercontent.com/m4heshd/rclone-olderversion-backup/master/rclone-current-linux-amd64.zip' && \
-    unzip rclone-current-linux-amd64.zip && \
+RUN curl -O 'https://github.com/rclone/rclone/releases/download/v1.65.2/rclone-v1.65.2-linux-amd64.zip' && \
+    unzip rclone-v1.65.2-linux-amd64.zip && \
     cp /rclone-*-linux-amd64/rclone /usr/bin/ && \
     chown root:root /usr/bin/rclone && \
     chmod 755 /usr/bin/rclone
